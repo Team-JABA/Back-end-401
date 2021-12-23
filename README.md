@@ -32,3 +32,21 @@ http://localhost:3000/api/crime?lat=$35.9965&lon=-115.2096&datetime_ini=2021-11-
 API key
 
 https://private-anon-644bdcb09a-crimeometer.apiary-mock.com/v1/incidents/raw-data?lat={lat}&lon={lon}&distance={distance}&datetime_ini={datetime_ini}&datetime_end={datetime_end}&page={page}',
+
+# Testing
+{
+    "user" : "anthony",
+    "cityKey" : "AUS",
+    "incidentCode" : "20191010131",
+    "incidentDate" : "2021-11-01 16:32:42",
+    "incidentOffense" : "Alcohol-related offense",
+    "incidentOffenseCode" : "90D",
+    "incidentOffenseDescription" : "Driving Under the Influence",
+    "incidentOffenseCrimeAgainst" : "society", 
+    "incidentOffenseAction" : "C", 
+    "incidentSourceOriginalType" : "DWI", 
+    "incidentSourceName": "Austin_Police_Department_Crime_Report", 
+    "incidentLat": "30.30535921",
+    "incidentLon": "-97.67908217",
+    "isVerified": "true"
+}
