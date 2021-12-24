@@ -17,7 +17,7 @@ afterAll(async () => {
 describe('Testing our REST methods', () => {
     it('should be able to create an incident using POST /incident', async () => {
     const response = await request.post('/incident').send({
-      user : "anthony",
+      userName : "anthony",
       cityKey : "AUS",
       incidentCode : 20191010131,
       incidentDate : "2021-11-01 16:32:42",
@@ -34,7 +34,7 @@ describe('Testing our REST methods', () => {
     });
 
     const response2 = await request.post('/incident').send({
-      user : "matt",
+      userName : "matt",
       cityKey : "AUS",
       incidentCode : 20191010131,
       incidentDate : "2021-11-01 16:32:42",
@@ -51,10 +51,10 @@ describe('Testing our REST methods', () => {
     });
 
     expect(response.body.id).toBe(1);
-    expect(response.body.user).toBe("anthony");
+    expect(response.body.userName).toBe("anthony");
     expect(response.body.incidentDate).toBe("2021-11-01T23:32:42.000Z");
     expect(response2.body.id).toBe(2);
-    expect(response2.body.user).toBe("matt");
+    expect(response2.body.userName).toBe("matt");
     expect(response2.body.isVerified).toBe(false);
   })
 
@@ -69,7 +69,7 @@ describe('Testing our REST methods', () => {
     const response = await request.get('/incident/1');
     expect(response.status).toBe(200);
     expect(response.body.id).toBe(1);
-    expect(response.body.user).toBe("anthony");
+    expect(response.body.userName).toBe("anthony");
     expect(response.body.incidentDate).toBe("2021-11-01T23:32:42.000Z");
   })
 
@@ -78,7 +78,7 @@ describe('Testing our REST methods', () => {
       isVerified: false
     });
     expect(response.status).toBe(200);
-    expect(response.body.user).toBe("anthony");
+    expect(response.body.userName).toBe("anthony");
     expect(response.body.isVerified).toBe(false);
   })
 
