@@ -19,7 +19,13 @@
     "isVerified": "true"
 }
 
+
+# Heroku Address
+Main Url : https://isnitch-team-jaba.herokuapp.com/
+Ping : https://isnitch-team-jaba.herokuapp.com/api/ping
+
 # Postgres Db URI
 postgres://bwrunthvxliedb:4bd084297b3877f8d613939312abc1f32d9e5955604b8125122f8c37def14b49@ec2-52-45-211-119.compute-1.amazonaws.com:5432/d17rjh33s66rss
+
 
 
