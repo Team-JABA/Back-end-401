@@ -51,4 +51,6 @@ https://private-anon-644bdcb09a-crimeometer.apiary-mock.com/v1/incidents/raw-dat
     "isVerified": "true"
 }
 
-CREATE TABLE incidents( id serial PRIMARY KEY, user VARCHAR ( 200 ) UNIQUE NOT NULL, cityKey VARCHAR ( 20 ), incidentCode VARCHAR ( 255 ), incidentDate DATE ( 6 ) NOT NULL, incidentOffense VARCHAR (255), incidentOffenseCode VARCHAR (255), incidentOffenseDescription VARCHAR (255), incidentOffenseCrimeAgainst VARCHAR (255), incidentOffenseAction VARCHAR (255), incidentSourceOriginalType VARCHAR (255), incidentSourceName VARCHAR (255), incidentLat DOUBLE (6,4) NOT NULL, incidentLon DOUBLE (7,4) NOT NULL, isVerified BOOLEAN, created_on TIMESTAMP NOT NULL );
+# Heroku Address
+Main Url : https://isnitch-team-jaba.herokuapp.com/
+Ping : https://isnitch-team-jaba.herokuapp.com/api/ping
