@@ -82,6 +82,16 @@ describe('Testing our REST methods', () => {
     expect(response.body.userId).toBe("anthony");
   })
 
+
+  it('should be able to update an incident by id using Put /user', async () => {
+    const response = await (request.put(`/user/${createdUserId}`)).send({
+      homeCityKey : "lat/long",
+    });
+    console.log(response)
+    expect(response.status).toBe(200);
+    expect(response.body.homeCityKey).toBe("lat/long");
+  })
+
   it('should be able to delete an incident by id using Delete /user', async () => {
     const response = await (request.delete(`/user/${createdUserId}`));
     expect(response.status).toBe(204);
