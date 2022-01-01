@@ -87,7 +87,6 @@ describe('Testing our REST methods', () => {
     const response = await (request.put(`/user/${createdUserId}`)).send({
       homeCityKey : "lat/long",
     });
-    console.log(response)
     expect(response.status).toBe(200);
     expect(response.body.homeCityKey).toBe("lat/long");
   })
