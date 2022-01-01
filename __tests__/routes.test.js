@@ -84,7 +84,7 @@ describe('Testing our REST methods', () => {
 
 
   it('should be able to update an incident by id using Put /user', async () => {
-    const response = await (request.put(`/user/${createdUserId}`)).send({
+    const response = await (request.put(`/user/anthony`)).send({
       homeCityKey : "lat/long",
     });
     expect(response.status).toBe(200);
